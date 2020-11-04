@@ -11,4 +11,9 @@ export default new Router({
     component: indexPage
   }]
 })
+// 清除路由重复报错
+const originalPush = Router.prototype.push
+   Router.prototype.push = function push(location) {
+   return originalPush.call(this, location).catch(err => err)
+}
 //需要配置的路由路径写在此index.js里面

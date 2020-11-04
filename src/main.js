@@ -3,6 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+//引入基本样式去除浏览器默认样式
+import './assets/site/css/base.css';
+//rem
+import Rem from './assets/site/js/rem.js';
+Vue.use(Rem);
 
 Vue.config.productionTip = false
 
