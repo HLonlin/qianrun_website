@@ -1,7 +1,7 @@
 <template>
-  <div class="Index">
+  <div class="Index" id="index">
     <Navbar></Navbar>
-    <div class="banner_box" id="index">
+    <div class="banner_box">
       <img v-if="device==='Mobile' || screenWidth<=750" class="banner" src="../assets/site/img/banner_mobile.jpg">
       <img v-else class="banner" src="../assets/site/img/banner_pc.jpg">
     </div>
@@ -12,10 +12,10 @@
         <div class="tabTitleE">COMPANY PROFILE</div>
       </div>
 
-      <p class="titleBig">校企一站式信息化建设服务商</p>
+      <p class="titleBig">校企信息化建设服务商</p>
       <div class="introductionText_box">
-        <p class="introductionText">广东乾润科技发展有限公司，是一家专注于校企信息化产品研发、校企信息化建设综合解决方案提供商。我们致力成为众多学校、政府与社会组织机构以及企业信赖的长期合作伙伴。</p>
-        <p class="introductionText">乾润科技深耕于校企信息化建设领域，提供产品研发与销售、一体化综合解决方案服务。公司自主研发的智慧校园、智慧网络、智慧收银三大核心产品体系，适用于各大高校、大中专院校等不同体系的各类学校、政府与社会组织机构、现代化农贸市场等应用场景。我们不断创新，追求极致的产品体验，为全面提升校企信息管理水平、提升用户体验，为推动校企信息化建设赋能。产品适用于各大高校、大中专院校等不同体系的各类学校、移动互联网公司、互联网医疗公司等。</p>
+        <p class="introductionText">广东乾润科技发展有限公司，是一家专注于校企信息化产品研发、校企信息化体系建设服务提供商。我们致力成为众多学校、政府与社会组织机构以及企业信赖的长期合作伙伴。</p>
+        <p class="introductionText">乾润科技深耕于校企信息化建设领域，提供产品研发与销售、一体化综合解决方案服务。公司自主研发的智慧校园、智慧网络、智慧零售三大核心产品体系，适用于各大高校、大中专院校等不同体系的各类学校、政府与社会组织机构、现代化农贸市场等应用场景。我们不断创新，追求极致的产品体验，为全面提升校企信息管理水平、提升用户体验，为推动校企信息化建设赋能。</p>
         <p class="introductionText">我们通过资产重组，控股广州市乾润信息技术有限公司，广州斑驴文化传播有限公司两家分支机构，深层次的发展信息化建设项目型孵化、文化信息平台建设，更全面的满足用户以及合作伙伴在工作上、生活上、精神建设上深层次的需求。</p>
       </div>
 
@@ -35,16 +35,16 @@
 
 
       <div class="service_introduction">
-        <p class="server_textLine text_indent" style="margin-top: 0rem;"> 乾润ALL-IN是乾润服务体系，服务基于软件研发人员共享模式，提供一站式解决方案。</p>
+        <p class="server_textLine text_indent" style="margin-top: 0rem;">乾润科技ALL-IN是乾润科技服务体系，服务基于软件研发人员共享模式，提供一站式解决方案。</p>
         <p class="server_textLine text_indent" style="margin-top: 0rem;">ALL-IN服务分为基础服务、研发服务两种服务模式。</p>
-        <p class="server_textLine server_textLineBlack server_marginAround">乾润致力于帮助客户构建成功的一站式信息化建设解决方案！</p>
+        <p class="server_textLine server_textLineBlack server_marginAround">乾润科技致力于通过长效的信息化技术手段，帮助客户构建优秀的、可持续发展的信息化建设系统。</p>
         <div class="int_item">
           <p class="server_textLine server_textLineBold server_textTitle">ALL-IN基础服务：</p>
           <p class="server_textLine">提供网络部署、运维、错误修正、兼容性处理、应用上架、防攻击、备份、容灾处理、网站备案、应用市场、开放平台、证书申请、软件著作权申请等一系列增值服务，服务期免费。</p>
         </div>
         <div class="int_item">
           <p class="server_textLine server_textLineBold server_textTitle server_textTitle2">ALL-IN研发服务：</p>
-          <p class="server_textLine">基于软件研发人员共享模式，提供对项目进行迭代更新、升级研发一站式服务。<br />
+          <p class="server_textLine">基于软件研发人员共享模式，提供对项目进行迭代更新、升级研发一站式服务。
             购买ALL-IN研发服务服务期间，可同时享受ALL-IN基础服务，需求方不再需要配备IT人员，有效减少人员冗余，降低人力成本。<br>
             项目基于合同约束，运维、开发服务内容、进度保障清晰可控、未来成本可控，风险低，有助于需求方集中精力深耕市场，推广平台业务。</p>
         </div>
@@ -71,22 +71,27 @@
               <p class="production_textE">SMART CAMPUS</p>
             </div>
           </div>
-          <div class="production_content">智慧校园是乾润公司自主研发的针对校内管理的整体解决方案。通过基础设施搭建和服务的配置，可以让学校快速完成基础信息化建设或者改造，让数据更快的能够流转和存储，并通过分析产生价值。解决方案能有效地帮助教师们提高工作效率和教学质量50%以上，目前已有较多高校和职校引入使用智慧校园平台。智慧校园移动端可提供app，小程序，公众号，企业微信整合方案。</div>
+          <div class="production_content">智慧校园是乾润科技公司自主研发的针对校内管理的整体解决方案。通过基础设施搭建和服务的配置，可以让学校快速完成基础信息化建设或者改造，让数据更快的能够流转和存储，并通过分析产生价值。解决方案能有效地帮助教师们提高工作效率和教学质量50%以上，目前已有较多高校和职校引入使用智慧校园平台。智慧校园移动端可提供app，小程序，公众号，企业微信整合方案。</div>
         </div>
         <div class="production_txtBox">
           <img src="../assets/site/img/campusBox_right.jpg" width="100%" height="100%" alt="">
         </div>
       </div>
+
       <div class="production_box d-flex flex-wrap justify-content-center" v-if="device==='Mobile' || screenWidth<=992">
         <div class="production_imgBox production_bgNetwork">
           <div class="production_logoBox">
             <div class="production_logo"></div>
             <div class="production_textBox">
               <p class="production_text">智慧网络</p>
-              <p class="production_textE">SMART CAMPUS</p>
+              <p class="production_textE">SMART NETWORK</p>
             </div>
           </div>
-          <div class="production_content">智慧化网络管理服务，涵盖无线认证、私有云公有云混合云管理、网络安全、设备监控、日志监控和日志分析、口令管理平台等，让科技改变传统网络管理模式。核心SmartPortal无线认证平台，计费平台，可让您轻松解决混合品牌无线网络认证，漫游不掉线。</div>
+          <div class="production_content">
+            智慧化网络管理服务，涵盖无线认证、混合云一体化管理、网络安全、设备监控、日志监控和日志分析、口令管理平台等，让科技改变传统网络管理模式。<br>
+            核心产品SmartPortal无线认证平台，计费平台，可让您轻松解决混合品牌无线网络认证，漫游不掉线。<br>
+            核心产品SmartCloud融合云安全平台，提供堡垒机服务、安全WebProxy、安全内外网穿透，轻松管理、应用庞大网络，减低管理成本。
+          </div>
         </div>
         <div class="production_txtBox">
           <img src="../assets/site/img/networkBox_left.png" width="100%" height="100%" alt="">
@@ -102,26 +107,29 @@
             <div class="production_logo"></div>
             <div class="production_textBox">
               <p class="production_text">智慧网络</p>
-              <p class="production_textE">SMART CAMPUS</p>
+              <p class="production_textE">SMART NETWORK</p>
             </div>
           </div>
-          <div class="production_content">智慧化网络管理服务，涵盖无线认证、私有云公有云混合云管理、网络安全、设备监控、日志监控和日志分析、口令管理平台等，让科技改变传统网络管理模式。核心SmartPortal无线认证平台，计费平台，可让您轻松解决混合品牌无线网络认证，漫游不掉线。</div>
+          <div class="production_content">
+            智慧化网络管理服务，涵盖无线认证、混合云一体化管理、网络安全、设备监控、日志监控和日志分析、口令管理平台等，让科技改变传统网络管理模式。<br>
+            核心产品SmartPortal无线认证平台，计费平台，可让您轻松解决混合品牌无线网络认证，漫游不掉线。<br>
+            核心产品SmartCloud融合云安全平台，提供堡垒机服务、安全WebProxy、安全内外网穿透，轻松管理、应用庞大网络，减低管理成本。
+          </div>
         </div>
       </div>
-
       <div class="production_box d-flex flex-wrap justify-content-center">
         <div class="production_imgBox production_bgCashier">
           <div class="production_logoBox">
             <div class="production_logo"></div>
             <div class="production_textBox">
-              <p class="production_text">智慧收银</p>
-              <p class="production_textE">SMART CAMPUS</p>
+              <p class="production_text">智慧零售</p>
+              <p class="production_textE">SMART RETAIL</p>
             </div>
           </div>
-          <div class="production_content">为社区菜市场、农贸商城提供收银体系自动结算及收银、商品信息管理、商户管理、食品追溯安全管理和智慧化运营管理整体解决方案。实现市场业务智能化、一体化、可持续发展的管理机制，全面提升市场的管理水平及用户购物体验，同时为监管部门提供食品安全、信息安全保驾护航。</div>
+          <div class="production_content">为社区菜市场、农贸商城提供收银体系自动结算及收银、商品信息管理、商户管理、溯源管理和智慧化运营管理整体解决方案。实现市场业务智能化、一体化、可持续发展的管理机制，全面提升市场的管理水平及用户购物体验，同时为监管部门提供食品安全、信息安全保驾护航。</div>
         </div>
         <div class="production_txtBox">
-          <img src="../assets/site/img/cashierBox_right.png" width="100%" height="100%" alt="">
+          <img src="../assets/site/img/cashierBox_right.jpg" width="100%" height="100%" alt="">
         </div>
       </div>
 
@@ -159,7 +167,7 @@
           </div>
         </div>
       </div>
-      <div class="copyright">Copyright © 2012-2020 广东乾润科技发展有限公司 版权所有
+      <div class="copyright">Copyright © 2020 广东乾润科技发展有限公司 版权所有
         <a href="http://beian.miit.gov.cn/" target="_blank" style="color: #6C757D;">粤ICP备2020088693号-1</a>
       </div>
     </div>
@@ -299,11 +307,10 @@
 
   .tabLogo {
     display: inline-block;
-    width: 2.75rem;
-    height: 2.75rem;
-    background-image: url(../assets/site/img/diamond.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    width: 2.1875rem;
+    height: 2.1875rem;
+    background-color: #296EF0;
+    transform: rotate(45deg);
     text-align: center;
     margin-top: 5.625rem;
     margin-bottom: 1rem;
@@ -650,11 +657,6 @@
       font-size: 1rem;
     }
 
-    /* .logoBox {
-      height: auto;
-      padding: unset;
-    } */
-
     .middleLine {
       display: none;
     }
@@ -706,8 +708,8 @@
   /* less than 768px*/
   @media (max-width: 767.98px) {
     .tabLogo {
-      width: 1.875rem;
-      height: 1.875rem;
+      width: 1.5625rem;
+      height: 1.5625rem;
       margin-top: 1.875rem;
       margin-bottom: 0.75rem;
     }
