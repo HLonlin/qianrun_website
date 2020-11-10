@@ -34,9 +34,7 @@
       </div>
 
 
-      <div class="service_introduction">
-        <p class="server_textLine text_indent" style="margin-top: 0rem;">乾润科技ALL-IN是乾润科技服务体系，服务基于软件研发人员共享模式，提供一站式解决方案。</p>
-        <p class="server_textLine text_indent" style="margin-top: 0rem;">ALL-IN服务分为基础服务、研发服务两种服务模式。</p>
+      <!-- <div class="service_introduction">
         <p class="server_textLine server_textLineBlack server_marginAround">乾润科技致力于通过长效的信息化技术手段，帮助客户构建优秀的、可持续发展的信息化建设系统。</p>
         <div class="int_item">
           <p class="server_textLine server_textLineBold server_textTitle">ALL-IN基础服务：</p>
@@ -54,6 +52,45 @@
             <br />
             以需求方的想法为核心，帮助需求方实现流量变现、用户留存、实现品牌营销效果最大化。</p>
         </div>
+      </div> -->
+      <div class="service_introduction">
+        <div class="server_text server_textBlack">乾润科技致力于通过长效的信息化技术手段，帮助客户构建优秀的、可持续发展的信息化建设系统。</div>
+        <div class="server_title">
+          <div class="server_logoBox">
+            <img v-if="device==='Mobile' || screenWidth<=750" src="../assets/site/img/serveritem_mobile1.png" alt="">
+            <img v-else class="server_logo" src="../assets/site/img/serveritem_pc1.png" alt="">
+          </div>以客户为中心，为客户创造价值
+        </div>
+        <div class="server_text ">乾润科技为学校、企业与社会组织机构提供校企信息化产品，构建校企信息化解决方案，为校企信息化建设与价值效益提升赋能。</div>
+        <div class="server_title">
+          <div class="server_logoBox">
+            <img v-if="device==='Mobile' || screenWidth<=750" src="../assets/site/img/serveritem_mobile2.png" alt="">
+            <img v-else class="server_logo" src="../assets/site/img/serveritem_pc2.png" alt=""></div>为您提供高性能的软件产品
+        </div>
+        <div class="server_text "><span class="server_textBlack">智慧校园：</span>以学校日常管理、师生基础为核心，融合学校数据中台（OpenAPI）、数字化校园系统、OA办公、教务系统、人力资源管理系统、评价考核系统、在线课堂、线上考试系统、教学资源管理系统、网站系统、校园安全等信息化管理系统,为学校提供一体化的综合解决方案，搭建智慧校园综合服务平台。优化校园一站式生活体验，提升校园安全系数，降低学校管理成本。</div>
+        <div class="server_text "><span class="server_textBlack">智慧网络：</span>SmartPortal无线认证平台解决学校师生校园账号上网和计费功能，可集成AC、AP管理、可满足校园上网行为管理、日志数据追踪、等保要求。SmartCloud融合云安全平台集成堡垒机服务、WebProxy、密码审计、日志管理、服务器监控、一键巡检功能等。</div>
+        <div class="server_text "><span class="server_textBlack">智慧零售：</span>以信息化手段建立长效的、可持续发展的社区菜市场、农贸商城销售、运营管理机制，结合清算支付系统、信息管理系统、溯源管理系统，构建示范性智能化农贸销售体系。</div>
+        <div class="server_title">
+          <div class="server_logoBox">
+            <img v-if="device==='Mobile' || screenWidth<=750" src="../assets/site/img/serveritem_mobile3.png" alt="">
+            <img v-else class="server_logo" src="../assets/site/img/serveritem_pc3.png" alt="">
+          </div>为您提供一站式信息化建设方案
+        </div>
+        <div class="server_text ">乾润科技坚持统筹兼顾、分步实施、统一平台、统一管理、资源共享、稳定安全原则，在整合利用现有资源的基础上，不断优化、完善系统服务功能，构建集信息开发、应用、管理、服务与建设一体化的信息化体系。</div>
+        <div class="server_title">
+          <div class="server_logoBox">
+            <img v-if="device==='Mobile' || screenWidth<=750" src="../assets/site/img/serveritem_mobile4.png" alt="">
+            <img v-else class="server_logo" src="../assets/site/img/serveritem_pc4.png" alt="">
+          </div>为您提供安全可靠的系统产品
+        </div>
+        <div class="server_text ">乾润科技产品 通过通信数据加密、基于ukey的数据加密解密、定期漏洞扫描等多种手段来确保软件系统安全；最高可满足计算机等级保护2.0三级要求。</div>
+        <div class="server_title">
+          <div class="server_logoBox">
+            <img v-if="device==='Mobile' || screenWidth<=750" src="../assets/site/img/serveritem_mobile5.png" alt="">
+            <img v-else class="server_logo" src="../assets/site/img/serveritem_pc5.png" alt="">
+          </div>7*24无忧服务
+        </div>
+        <div class="server_text ">7*24小时无忧服务，技术大牛即呼即应，为系统安全保驾护航。</div>
       </div>
 
       <div class="tabBox" id="production">
@@ -391,10 +428,41 @@
     box-sizing: border-box;
   }
 
-  .serverItemBox {
-    position: relative;
-    height: 400px;
+  .server_text {
+    box-sizing: border-box;
+    padding-left: 2.3125rem;
+    padding-bottom: 1.25rem;
+    font-size: 1.125rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
   }
+
+  .server_textBlack {
+    font-weight: 600;
+    color: #333333;
+  }
+
+  .server_title {
+    position: relative;
+    box-sizing: border-box;
+    padding-bottom: 0.75rem;
+    padding-left: 2.3125rem;
+    font-size: 1.25rem;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 600;
+    color: #333333;
+  }
+  .server_logoBox {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 2.3125rem;
+    height: 100%;
+  }
+
 
   .server_textLine {
     font-size: 1.125rem;
@@ -809,5 +877,16 @@
       margin: 0 1rem;
     }
 
+    .server_text {
+      padding: 0rem 1rem 1.5625rem 1rem;
+    }
+
+    .server_title {
+      padding: 0rem 1rem 0.75rem 2.6875rem;
+    }
+    .server_logoBox{
+      width: 1.6875rem;
+      left: 1rem;
+    }
   }
 </style>
