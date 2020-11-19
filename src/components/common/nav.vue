@@ -14,7 +14,7 @@
           <ul class="navbar-nav">
             <li :class="ontap==='#index'?'navItem onTap':'navItem'" @click="anchorTo('#index')">首页</li>
             <li :class="ontap==='#company'?'navItem onTap':'navItem'" @click="anchorTo('#company')">公司简介</li>
-            <li :class="ontap==='#service'?'navItem onTap':'navItem'" @click="anchorTo('#service')">服务范围</li>
+            <li :class="ontap==='#content'?'navItem onTap':'navItem'" @click="anchorTo('#content')">服务内容</li>
             <li :class="ontap==='#production'?'navItem onTap':'navItem'" @click="anchorTo('#production')">产品介绍</li>
             <li :class="ontap==='#branch'?'navItem onTap':'navItem'" @click="anchorTo('#branch')">分支机构</li>
             <li :class="ontap==='#contact'?'navItem onTap':'navItem'" @click="anchorTo('#contact')">联系我们</li>

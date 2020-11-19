@@ -15,8 +15,8 @@
       <p class="titleBig">校企信息化建设服务商</p>
       <div class="introductionText_box">
         <p class="introductionText">广东乾润科技发展有限公司，是一家专注于校企信息化产品研发、校企信息化体系建设服务提供商。我们致力成为众多学校、政府与社会组织机构以及企业信赖的长期合作伙伴。</p>
-        <p class="introductionText">乾润科技深耕于校企信息化建设领域，提供产品研发与销售、一体化综合解决方案服务。公司自主研发的智慧校园、智慧网络、智慧零售三大核心产品体系，适用于各大高校、大中专院校等不同体系的各类学校、政府与社会组织机构、现代化农贸市场等应用场景。我们不断创新，追求极致的产品体验，为全面提升校企信息管理水平、提升用户体验，为推动校企信息化建设赋能。</p>
-        <p class="introductionText">我们通过资产重组，控股广州市乾润信息技术有限公司，广州斑驴文化传播有限公司两家分支机构，深层次的发展信息化建设项目型孵化、文化信息平台建设，更全面的满足用户以及合作伙伴在工作上、生活上、精神建设上深层次的需求。</p>
+        <p class="introductionText">乾润科技深耕于校企信息化建设领域，提供校企信息化产品、构建信息化体系服务。公司自主研发的智慧校园、智慧网络、智慧零售三大核心产品体系，适用于各大高校、大中专院校等不同体系的各类学校、政府与社会组织机构、现代化农贸市场等应用场景。我们不断创新，追求极致的产品体验，为全面提升校企信息管理水平、提升用户体验，为推动校企信息化建设赋能。</p>
+        <p class="introductionText">我们通过资产重组，控股广州市乾润信息技术有限公司，广州斑驴文化传播有限公司两家分支机构，深层次的发展信息化建设项目型孵化、文化信息平台建设，更全面的满足用户以及合作伙伴在工作、生活、精神建设上深层次的需求。</p>
       </div>
 
       <p class="qianrunServer_title">乾润服务</p>
@@ -27,38 +27,18 @@
       </div>
 
 
-      <div class="tabBox tabBox_marginAround" id="service">
+      <div class="tabBox tabBox_marginAround" id="content">
         <i class="tabLogo" style="margin-top: 2rem;"></i>
-        <div class="tabTitle">服务范围</div>
-        <div class="tabTitleE">SERVICE SCOPE</div>
+        <div class="tabTitle">服务内容</div>
+        <div class="tabTitleE">SERVICE CONTENT</div>
       </div>
 
-
-      <!-- <div class="service_introduction">
-        <p class="server_textLine server_textLineBlack server_marginAround">乾润科技致力于通过长效的信息化技术手段，帮助客户构建优秀的、可持续发展的信息化建设系统。</p>
-        <div class="int_item">
-          <p class="server_textLine server_textLineBold server_textTitle">ALL-IN基础服务：</p>
-          <p class="server_textLine">提供网络部署、运维、错误修正、兼容性处理、应用上架、防攻击、备份、容灾处理、网站备案、应用市场、开放平台、证书申请、软件著作权申请等一系列增值服务，服务期免费。</p>
-        </div>
-        <div class="int_item">
-          <p class="server_textLine server_textLineBold server_textTitle server_textTitle2">ALL-IN研发服务：</p>
-          <p class="server_textLine">基于软件研发人员共享模式，提供对项目进行迭代更新、升级研发一站式服务。
-            购买ALL-IN研发服务服务期间，可同时享受ALL-IN基础服务，需求方不再需要配备IT人员，有效减少人员冗余，降低人力成本。<br>
-            项目基于合同约束，运维、开发服务内容、进度保障清晰可控、未来成本可控，风险低，有助于需求方集中精力深耕市场，推广平台业务。</p>
-        </div>
-        <div class="int_item">
-          <p class="server_textLine server_textLineBold server_textTitle server_textTitle3">ALL-IN运营服务：</p>
-          <p class="server_textLine">在项目或产品完成交付后，针对需求方平台基于市场、运营推广活动需要，提供活动相关的主题设计、广告设计、微信公众号代运营、数据归集和分析服务等。
-            <br />
-            以需求方的想法为核心，帮助需求方实现流量变现、用户留存、实现品牌营销效果最大化。</p>
-        </div>
-      </div> -->
       <div class="service_introduction">
         <div class="server_text server_textBlack">乾润科技致力于通过长效的信息化技术手段，帮助客户构建优秀的、可持续发展的信息化建设系统。</div>
         <div class="server_title">
           <div class="server_logoBox">
             <img v-if="device==='Mobile' || screenWidth<=750" src="../assets/site/img/serveritem_mobile1.png" alt="">
-            <img v-else class="server_logo" src="../assets/site/img/serveritem_pc1.png" alt="">
+            <img v-else class="server_logo" src="../assets/site/img/serveritem_pc1.png" alt="" style="margin-left: 0.125rem;">
           </div>以客户为中心，为客户创造价值
         </div>
         <div class="server_text ">乾润科技为学校、企业与社会组织机构提供校企信息化产品，构建校企信息化解决方案，为校企信息化建设与价值效益提升赋能。</div>
@@ -74,7 +54,7 @@
           <div class="server_logoBox">
             <img v-if="device==='Mobile' || screenWidth<=750" src="../assets/site/img/serveritem_mobile3.png" alt="">
             <img v-else class="server_logo" src="../assets/site/img/serveritem_pc3.png" alt="">
-          </div>为您提供一站式信息化建设方案
+          </div>为您构建一体化信息化体系
         </div>
         <div class="server_text ">乾润科技坚持统筹兼顾、分步实施、统一平台、统一管理、资源共享、稳定安全原则，在整合利用现有资源的基础上，不断优化、完善系统服务功能，构建集信息开发、应用、管理、服务与建设一体化的信息化体系。</div>
         <div class="server_title">
@@ -446,8 +426,7 @@
   .server_title {
     position: relative;
     box-sizing: border-box;
-    padding-bottom: 0.75rem;
-    padding-left: 2.3125rem;
+    padding: 0.625rem 0rem 0.75rem 2.3125rem;
     font-size: 1.25rem;
     font-family: PingFangSC-Medium, PingFang SC;
     font-weight: 600;
@@ -461,63 +440,11 @@
     display: inline-block;
     width: 2.3125rem;
     height: 100%;
-  }
-
-
-  .server_textLine {
-    font-size: 1.125rem;
-    font-family: PingFangSC-Regular, PingFang SC;
-    font-weight: 400;
-    color: #666666;
+    padding-top: 0.625rem;
     box-sizing: border-box;
-    padding: 0rem 1rem 0rem 1rem;
-    margin-top: 0.5625rem;
   }
 
-  .server_textIndent {
-    text-indent: 2.5rem;
-  }
 
-  .server_marginAround {
-    margin-bottom: 2.5rem;
-  }
-
-  .server_textLineBlack {
-    color: #333333;
-    font-weight: bold;
-  }
-
-  .server_textLineBold {
-    font-size: 1.125rem;
-    color: #333333;
-    font-weight: bold;
-  }
-
-  .server_textTitle {
-    font-size: 1.25rem;
-    position: relative;
-    padding-left: 3.125rem;
-  }
-
-  .server_textTitle::before {
-    position: absolute;
-    left: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    content: '';
-    background-image: url(../assets/site/img/servertab1.png);
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
-  }
-
-  .server_textTitle2::before {
-    background-image: url(../assets/site/img/servertab2.png);
-  }
-
-  .server_textTitle3::before {
-    background-image: url(../assets/site/img/servertab3.png);
-  }
 
   .production_box {
     width: 100%;
@@ -887,6 +814,7 @@
     .server_logoBox{
       width: 1.6875rem;
       left: 1rem;
+      padding-top: 0rem;
     }
   }
 </style>
