@@ -8,14 +8,17 @@ import router from './router'
 import './assets/site/css/base.css';
 
 
+import 'nprogress/nprogress.css';
+
+
 // 生产环境下不启动提示消息
 Vue.config.productionTip = false;
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  router,
-  components: {
-    App
-  },
-  template: '<App/>'
+    el: '#app',
+    router,
+    components: {
+        App
+    },
+    template: '<App/>'
 })

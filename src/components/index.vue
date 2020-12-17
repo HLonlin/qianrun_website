@@ -191,6 +191,7 @@
   </div>
 </template>
 <script>
+  import NProgress from 'nprogress';
   import Navbar from "../components/common/nav";
   export default {
     name: "Index",
@@ -221,8 +222,21 @@
           this.screenWidth = document.body.clientWidth;
         })();
       };
+      window.addEventListener("scroll", this.handleScroll); // 监听滚动条事件
     },
     methods: {
+      handleScroll() {
+        // 屏幕剩余的高度
+        let surplus =document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        // 当前滑动高度
+        let scrollY = document.documentElement.scrollTop;
+        // 当前位置百分比小数
+        let coorY = scrollY / surplus;
+        // 设置导航栏，这里使用NProgress.set() 动态更改进度条
+        NProgress.configure({showSpinner: false});
+        NProgress.configure({minimum:0.0});
+        NProgress.set(coorY);
+      },
       isMobile() { //检测是否移动端
         let flag = navigator.userAgent.match(
           /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
