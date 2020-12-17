@@ -89,13 +89,27 @@
     cursor: pointer;
   }
 
-  .navItem:hover,
+  /* .navItem:hover,
   .onTap {
+    color: #296EF0;
+  } */
+
+  .navItem:hover {
     color: #296EF0;
   }
 
-  .navItem:hover::after,
+  /* .navItem:hover::after,
   .onTap::before {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #296EF0;
+  } */
+
+  .navItem:hover::after {
     position: absolute;
     bottom: 0px;
     left: 0px;

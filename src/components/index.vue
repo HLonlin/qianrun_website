@@ -232,9 +232,12 @@
         let scrollY = document.documentElement.scrollTop;
         // 当前位置百分比小数
         let coorY = scrollY / surplus;
+        // 禁用加载小圆圈、设置最小长度
+        NProgress.configure({showSpinner: false,minimum:0.0});
         // 设置导航栏，这里使用NProgress.set() 动态更改进度条
-        NProgress.configure({showSpinner: false});
-        NProgress.configure({minimum:0.0});
+        if(coorY>=1){
+          coorY=0.99999999999
+        }
         NProgress.set(coorY);
       },
       isMobile() { //检测是否移动端

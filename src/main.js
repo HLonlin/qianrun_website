@@ -4,12 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-//引入基本样式去除浏览器默认样式
+// 引入基本样式去除浏览器默认样式
 import './assets/site/css/base.css';
 
-
+// 进度条样式
 import 'nprogress/nprogress.css';
-
 
 // 生产环境下不启动提示消息
 Vue.config.productionTip = false;
